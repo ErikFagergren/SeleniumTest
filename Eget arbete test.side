@@ -1,0 +1,72 @@
+{
+  "id": "a6ad3675-3dd8-4751-933c-dd8c124b529d",
+  "version": "2.0",
+  "name": "Eget arbete test",
+  "url": "https://ecutbildning.se",
+  "tests": [{
+    "id": "eebd1710-0b71-4393-b372-af2891a8a389",
+    "name": "Eget arbete test",
+    "commands": [{
+      "id": "661df88a-25ba-4477-bf31-0f311ba3c7d8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "965e7806-3ab7-4c64-9be3-dde1b0bd16e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1110x1340",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8205ea0b-cf28-41d3-a0f8-80a460b17dcc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.heading",
+      "targets": [],
+      "value": "IT är framtiden"
+    }, {
+      "id": "a4d799f6-bb6b-416b-90d7-7e33cbdde125",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mjukvarutestare >>",
+      "targets": [
+        ["linkText=Mjukvarutestare >>", "linkText"],
+        ["css=.wp-block-column:nth-child(1) > .wp-block-paragraph:nth-child(3) .site__a_cta", "css:finder"],
+        ["xpath=//a[contains(text(),'Mjukvarutestare >>')]", "xpath:link"],
+        ["xpath=//div[@id='page']/div[2]/div[2]/div/div/div/div/div[2]/div/div[3]/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ecutbildning.se/utbildningar/mjukvarutestare/')]", "xpath:href"],
+        ["xpath=//div[3]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mjukvarutestare >>')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50e397bb-e262-4209-9d55-e8d62ee4a5bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=KURSER",
+      "targets": [
+        ["linkText=KURSER", "linkText"],
+        ["css=strong:nth-child(1) > .site__a_cta", "css:finder"],
+        ["xpath=//a[contains(text(),'KURSER')]", "xpath:link"],
+        ["xpath=//div[@id='page']/div[3]/div[2]/div/div/div/div/div[2]/p/strong/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#Kurser-Mjukvarutestare')]", "xpath:href"],
+        ["xpath=//strong/a", "xpath:position"],
+        ["xpath=//a[contains(.,'KURSER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a548d169-549b-4549-a44b-61690060360c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["eebd1710-0b71-4393-b372-af2891a8a389"]
+  }],
+  "urls": ["https://ecutbildning.se/"],
+  "plugins": []
+}
